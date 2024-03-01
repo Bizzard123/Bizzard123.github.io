@@ -1,0 +1,148 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #000000;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar img{
+  padding-left: 60px;
+}
+
+.menu-button {
+  font-size: 1.5rem;
+  padding-right: 60px;
+  cursor: pointer;
+}
+
+.menu-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: none; /* Remove transition for transform property */
+}
+
+.menu-text.active {
+  transform: scale(1.1); /* Increase the scale when active */
+}
+
+.custom-dropdown {
+  position: absolute;
+  top: 50px; /* Adjust this based on your design */
+  right: 50px; /* Adjust this based on your design */
+  background-color: #fff;
+  border: 1px solid rgb(227, 229, 232);
+  padding: 20px 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.content {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.link {
+  font-size: 1.5rem;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .menu-button {
+    padding-right: 10px;
+  }
+  .custom-dropdown{
+    width: 50%;
+  }
+  .navbar img{
+    padding-left: 10px;
+  }
+}
+
+/* HamburgerButton.css */
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Open state styling */
+.hamburger-button.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-button.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-button.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* HeroSection.css */
+.section-container {
+  text-align: center;
+  padding: 5% 10%;
+}
+
+.gradient-text {
+  background: linear-gradient(#9c74c4, #54bbc4); /* Example gradient colors */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.8rem;
+  margin: 0px;
+  font-weight: 400;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.sub-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.centered-button {
+  background-color: #9c74c4; /* Example background color */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.centered-button:hover {
+  background-color: #45a049; /* Change background color on hover */
+}
