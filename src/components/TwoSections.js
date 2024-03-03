@@ -5,9 +5,11 @@ const TwoSectionsPage = () => {
     <div className="page-container">
       {/* Left Section */}
       <div className="left-section">
+      <div style={{position:'sticky',top:'0'}}>
         <h1>Title</h1>
         <img src="https://placekitten.com/200/200" alt="Sample Image" />
         <p>Description text goes here.</p>
+      </div>
       </div>
 
       {/* Right Section */}
