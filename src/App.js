@@ -7,6 +7,8 @@ import HeroSection from './components/HeroSection';
 import FloatingText from './components/Scroll';
 import Card from './components/Cards';
 import TwoSectionsPage from './components/TwoSections';
+import Footer from './components/Footer';
+import CardSection from './components/CardSection';
 
 
 const App = () => {
@@ -25,6 +27,8 @@ const App = () => {
       {/* <FloatingText /> */}
       <Card />
       <TwoSectionsPage />
+      <CardSection />
+      <Footer />
     </div>
   );
 };

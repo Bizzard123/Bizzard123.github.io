@@ -263,3 +263,168 @@
   
 }
 
+/* Footer.css */
+
+.footer-container {
+  background-color: #4b0082;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a{
+  color: #fff;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-link {
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #6a5acd; /* Medium Slate Blue - background color */
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.icon:hover {
+  background-color: #483d8b; /* Dark Slate Blue - hover background color */
+}
+
+
+/* CardSection.css */
+
+.card-section {
+  padding: 20px; /* Adjust padding as needed */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card2 {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 10px;
+  background-color: #fff;
+}
+
+.card-image {
+  flex: 1;
+  height: auto;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-content1 {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 15px;
+  gap: 10px;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+.card-content1 h2, p {
+  margin: 0;
+}
+
+button {
+  background-color: #4b0082;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6a5acd;
+}
+
+@media (max-width: 500px){
+  .card2{
+    flex-direction: column;
+  }
+}
+
+
+#scroller {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 120px;
+  font-weight: 900;
+  font-family: gilroy;
+  margin-right: 20px;
+  transition: all linear 0.3s;
+  color: #000;
+  -webkit-text-stroke: 2px #ffffff;
+}
+#scroller h4:hover {
+  color: #95c11e;
+  -webkit-text-stroke: 2px #95c11e;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
