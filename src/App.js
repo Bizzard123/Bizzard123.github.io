@@ -4,6 +4,9 @@ import Navbar from './components/navbar/Navbar';
 import './App.css';
 import WOW from 'wowjs';
 import HeroSection from './components/HeroSection';
+import FloatingText from './components/Scroll';
+import Card from './components/Cards';
+import TwoSectionsPage from './components/TwoSections';
 
 
 const App = () => {
@@ -19,6 +22,9 @@ const App = () => {
     <div>
       <Navbar />
       <HeroSection />
+      {/* <FloatingText /> */}
+      <Card />
+      <TwoSectionsPage />
     </div>
   );
 };

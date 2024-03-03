@@ -146,3 +146,131 @@
 .centered-button:hover {
   background-color: #54bbc4; /* Change background color on hover */
 }
+
+.floating-text {
+  position: absolute;
+  top: 50%;
+  left: -100%; /* Initially position the text outside the left edge */
+  transform: translateY(-50%);
+  animation: floatIn 2s forwards infinite; /* Animation to float in from left to right, infinite loop */
+}
+
+@keyframes floatIn {
+  to {
+    left: 100%; /* Move the text to the right edge */
+  }
+}
+
+.cardContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.card {
+  width: 18%;
+  margin: 1%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.3s;
+}
+
+.card:hover {
+  width: 30%; /* Expand the card on hover */
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://htmlcolorcodes.com/assets/images/colors/gray-color-solid-background-1920x1080.png'); /* Add your background image URL here */
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: none;
+  margin-top: 15px;
+}
+
+.card-content p{
+  display: none;
+}
+
+.card:hover .buttons {
+  display: block; /* Show the buttons on hover */
+}
+
+.card:hover .card-content p{
+  display: block;
+}
+
+
+.page-container {
+  display: flex;
+  flex-direction: column; /* Display in column for mobile view */
+  height: 100vh;
+  padding: 0px 30px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.left-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.right-section {
+  flex: 2;
+  overflow-y: visible;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #e0e0e0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.right-section::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.right-section {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.card1 {
+  width: 95%;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Media Query for Mobile View */
+@media (min-width: 600px) {
+  .page-container {
+    flex-direction: row; /* Switch back to row layout for wider screens */
+    
+  }
+  .right-section{
+    overflow-y: auto;
+  }
+}
