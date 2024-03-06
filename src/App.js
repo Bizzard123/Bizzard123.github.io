@@ -9,6 +9,8 @@ import Card from './components/Cards';
 import TwoSectionsPage from './components/TwoSections';
 import Footer from './components/Footer';
 import CardSection from './components/CardSection';
+import CardsSection from './components/CardsSection';
+import YourComponent from './components/TopicSection';
 
 
 const App = () => {
@@ -28,6 +30,8 @@ const App = () => {
       <Card />
       <TwoSectionsPage />
       <CardSection />
+      <YourComponent />
+      <CardsSection />
       <Footer />
     </div>
   );

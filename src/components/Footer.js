@@ -3,9 +3,9 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="footer-container wow slideInDown" data-wow-duration="1s">
+    <footer className="footer-container wow slideInDown">
       <div className="footer-links">
-        <div className="left-column wow fadeInLeft" data-wow-duration="2s">
+        <div style={{flex:'1'}} className="wow fadeInLeft">
           <h4>Links</h4>
           <ul>
             <li><a href="#">Link 1</a></li>
@@ -14,7 +14,7 @@ const Footer = () => {
             <li><a href="#">Link 4</a></li>
           </ul>
         </div>
-        <div className="left-column wow fadeInUp" data-wow-duration="2s">
+        <div style={{flex:'1'}} className="wow fadeInUp">
           <h4>More Links</h4>
           <ul>
             <li><a href="#">Link 5</a></li>
