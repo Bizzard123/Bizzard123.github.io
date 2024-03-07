@@ -1,77 +1,20 @@
-/* Navbar.css */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  color: #000000;
-  flex-direction: row;
-  font-family: "Montserrat", sans-serif;
-}
-.navbar img {
-  padding-left: 60px;
-}
-
-.menu-buttons{
-  display: flex;
-  
-}
-.menu-button {
-  font-size: 1.5rem;
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.menu-text {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  transition: none; /* Remove transition for transform property */
-}
-
-.menu-text.active {
-  transform: scale(1.1); /* Increase the scale when active */
+body {
+  overflow-x: hidden;
 }
 
 .custom-dropdown {
   position: absolute;
   top: 50px; /* Adjust this based on your design */
-  right: 50px; /* Adjust this based on your design */
+  right: 120px;
   background-color: #fff;
   border: 1px solid rgb(227, 229, 232);
   padding: 20px 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 20%;
-  height: 300px;
   border-radius: 20px;
 }
 
-.content {
-  gap: 5px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-.link {
-  font-size: 1.5rem;
-  color: #000000;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 5px 0;
-}
-
-/* Media query for mobile view */
-@media (max-width: 768px) {
-  .menu-button {
-    padding-right: 5px;
-  }
-  .custom-dropdown {
-    width: 50%;
-  }
-  .navbar img {
-    padding-left: 10px;
-  }
+.custom-dropdown li:hover{
+  background-color: #e0e0e0;
 }
 
 
@@ -166,24 +109,39 @@
   }
 }
 
-.cardContainer{
+.cardContainer {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling if cards overflow */
+  margin-bottom: 20px; /* Add some margin to the bottom for better spacing */
+  padding-left: 5%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cardContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .card {
-  width: 18%;
-  margin: 1%;
+  flex: 0 0 auto; /* Allow cards to shrink if necessary */
+  width: 200px;
   height: 250px;
   overflow: hidden;
   position: relative;
   transition: width 0.4s;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-  width: 30%; /* Expand the card on hover */
+  width: 320px; /* Expand the card on hover */
 }
 
 .card-content {
@@ -191,7 +149,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url('https://htmlcolorcodes.com/assets/images/colors/gray-color-solid-background-1920x1080.png'); /* Add your background image URL here */
+  background-image: url('https://htmlcolorcodes.com/assets/images/colors/gray-color-solid-background-1920x1080.png');
   color: white;
   padding: 20px;
   box-sizing: border-box;
@@ -202,15 +160,15 @@
   margin-top: 15px;
 }
 
-.card-content p{
+.card-content p {
   display: none;
 }
 
 .card:hover .buttons {
-  display: block; /* Show the buttons on hover */
+  display: block;
 }
 
-.card:hover .card-content p{
+.card:hover .card-content p {
   display: block;
 }
 

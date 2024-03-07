@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import CardSection from './components/CardSection';
 import CardsSection from './components/CardsSection';
 import YourComponent from './components/TopicSection';
+import MobileNavbar from './components/navbar/MobileNav';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      <MobileNavbar />
       <HeroSection />
       {/* <FloatingText /> */}
       <Card />
