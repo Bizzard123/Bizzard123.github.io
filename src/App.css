@@ -6,15 +6,16 @@ body {
   position: absolute;
   top: 50px; /* Adjust this based on your design */
   right: 120px;
-  background-color: #fff;
+  background-color: #343483;
   border: 1px solid rgb(227, 229, 232);
   padding: 20px 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  color: white;
 }
 
 .custom-dropdown li:hover{
-  background-color: #e0e0e0;
+  background-color: #444398;
 }
 
 
@@ -67,11 +68,13 @@ body {
   margin-bottom: 20px;
   margin-top: 20px;
   font-weight: 400;
+  color: #343483;
 }
 
 .sub-heading {
   font-size: 2rem;
   font-weight: 300;
+  color: #444398;
   margin-bottom: 20px;
 }
 
@@ -81,7 +84,7 @@ body {
 }
 
 .centered-button {
-  background-color: #9c74c4; /* Example background color */
+  background-color: #343483; /* Example background color */
   color: #fff;
   padding: 10px 20px;
   font-size: 1.5rem;
@@ -92,7 +95,7 @@ body {
 }
 
 .centered-button:hover {
-  background-color: #54bbc4; /* Change background color on hover */
+  background-color: #444398; /* Change background color on hover */
 }
 
 .floating-text {
@@ -150,7 +153,7 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url('https://htmlcolorcodes.com/assets/images/colors/gray-color-solid-background-1920x1080.png');
-  color: white;
+  color: #343483;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -168,6 +171,10 @@ body {
   display: block;
 }
 
+.card:hover .buttons button {
+  margin: 5px;
+}
+
 .card:hover .card-content p {
   display: block;
 }
@@ -175,7 +182,7 @@ body {
 
 .page-container {
   display: flex;
-  flex-direction: column; /* Display in column for mobile view */
+  flex-direction: column;
 }
 
 .left-section {
@@ -184,7 +191,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #f0f0f0;
+  background-color: #343483;
 }
 
 
@@ -199,14 +206,15 @@ body {
   flex: 1;
   max-width: 100%;
   padding: 20px;
-  background-color: #e0e0e0;
+  background-color: #343483;
 }
 
 
 
 .card1 {
-  background-color: white;
+  background-color: #444398;
   padding: 20px;
+  color: white;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

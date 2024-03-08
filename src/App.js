@@ -32,8 +32,8 @@ const App = () => {
       <Card />
       <TwoSectionsPage />
       <CardSection />
-      <YourComponent />
       <CardsSection />
+      <YourComponent />
       <Footer />
     </div>
   );
