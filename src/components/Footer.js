@@ -1,40 +1,50 @@
+// Footer.js
+
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="footer-container wow slideInDown">
-      <div className="footer-links">
-        <div style={{flex:'1'}} className="wow fadeInLeft">
-          <h4>Links</h4>
+    <div className="footer">
+      <div className="footer-container">
+        <div className="footer-column">
+          <h3>Column 1</h3>
           <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
           </ul>
         </div>
-        <div style={{flex:'1'}} className="wow fadeInUp">
-          <h4>More Links</h4>
+        <div className="footer-column">
+          <h3>Column 2</h3>
           <ul>
-            <li><a href="#">Link 5</a></li>
-            <li><a href="#">Link 6</a></li>
-            <li><a href="#">Link 7</a></li>
-            <li><a href="#">Link 8</a></li>
+            <li>Link 4</li>
+            <li>Link 5</li>
+            <li>Link 6</li>
           </ul>
         </div>
-        <div className="right-column wow fadeInRight" data-wow-duration="2s">
-          <h4>Follow Us</h4>
-          <div className="social-icons">
-            {/* React Icons */}
-            <a href="#" target="_blank" rel="noopener noreferrer" className="icon-link"><FaFacebook className="icon" /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="icon-link"><FaTwitter className="icon" /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="icon-link"><FaInstagram className="icon" /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="icon-link"><FaLinkedin className="icon" /></a>
-          </div>
+        {/* <div className="footer-column form-column">
+          <h3>Ask for Orders</h3>
+          <form>
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label htmlFor="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <button type="submit">Submit</button>
+          </form>
+        </div> */}
+        <div className="social-icons">
+          <FaFacebook className="icon" />
+          <FaTwitter className="icon" />
+          <FaInstagram className="icon" />
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 
