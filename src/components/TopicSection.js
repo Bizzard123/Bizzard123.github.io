@@ -15,7 +15,7 @@ const YourComponent = () => {
   };
 
   return (
-    <div className="section wow slideInRight">
+    <div className="section wow slideInRight" style={{backgroundColor:'white',paddingTop:"100px",paddingBottom:'100px'}}>
       <div className="left-column">
         {topics.map((topic, index) => (
           <div key={index} className="topic-container">

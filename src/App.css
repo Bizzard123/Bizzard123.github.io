@@ -50,17 +50,8 @@ body {
 /* HeroSection.css */
 .section-container {
   text-align: center;
-  padding: 5% 10%;
-}
-
-.gradient-text {
-  background: linear-gradient(#9c74c4, #54bbc4); /* Example gradient colors */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 1.8rem;
-  margin: 0px;
-  font-weight: 400;
+  background-color: white;
+  padding: 3% 10%;
 }
 
 .main-heading {
@@ -81,21 +72,43 @@ body {
 .button-container {
   display: flex;
   justify-content: center;
+  gap: 5px;
 }
 
 .centered-button {
   background-color: #343483; /* Example background color */
   color: #fff;
   padding: 10px 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
-  border-radius: 20px;
+  border: 1px solid #4b0082;
+  border-radius: 10px;
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
 
 .centered-button:hover {
-  background-color: #444398; /* Change background color on hover */
+  background-color: white; /* Change background color on hover */
+  border: 1px solid #343483;
+  color: #343483;
+}
+
+.centered-button-inverted {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: white; /* Change background color on hover */
+  border: 1px solid #343483;
+  color: #343483;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.centered-button-inverted:hover {
+  background-color: #343483; /* Example background color */
+  color: #fff;
+  border: 1px solid #4b0082;
 }
 
 .floating-text {
@@ -115,6 +128,8 @@ body {
 .cardContainer {
   display: flex;
   flex-direction: row;
+  padding-top: 10px;
+  height: 280px;
   gap: 20px;
   overflow-x: auto; /* Allow horizontal scrolling if cards overflow */
   margin-bottom: 20px; /* Add some margin to the bottom for better spacing */
@@ -152,15 +167,15 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url('https://htmlcolorcodes.com/assets/images/colors/gray-color-solid-background-1920x1080.png');
+  background-color: white;
+  border: 1px solid #343483;
   color: #343483;
   padding: 20px;
   box-sizing: border-box;
 }
 
-.buttons {
-  display: none;
-  margin-top: 15px;
+.card-content h2 {
+  margin-bottom: 2px;
 }
 
 .card-content p {
@@ -189,16 +204,37 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
   align-items: center;
+  padding: 0px 2%;
   justify-content: flex-start;
   background-color: #343483;
+}
+
+.left-section h1{
+  margin-top: 10px;
+}
+.joinButton{
+  color: #fff;
+  background-color: #343483;
+  border: 1px solid white;
+  margin-top: 5px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1rem;
+}
+
+.joinButton:hover {
+  color: #4b0082;
+  background-color: white;
 }
 
 
 .left-section img {
   max-width: 100%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 40px;
   margin-bottom: 20px;
 }
 
@@ -207,6 +243,10 @@ body {
   max-width: 100%;
   padding: 20px;
   background-color: #343483;
+}
+.right-section h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -308,9 +348,7 @@ body {
 
 .card-section {
   padding: 20px; /* Adjust padding as needed */
-
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .card-container {
@@ -397,15 +435,17 @@ button:hover {
   display: inline-block;
   font-size: 120px;
   font-weight: 900;
-  font-family: gilroy;
+  font-family: poppins;
+  margin-top: 30px;
+  margin-bottom: 60px;
   margin-right: 20px;
   transition: all linear 0.3s;
   color: #000;
   -webkit-text-stroke: 2px #ffffff;
 }
 #scroller h4:hover {
-  color: #95c11e;
-  -webkit-text-stroke: 2px #95c11e;
+  color: #343483;
+  -webkit-text-stroke: 2px #343483;
 }
 
 @keyframes scroll {

@@ -22,7 +22,7 @@ const MobileNavbar = () => {
   });
 
   return (
-    <nav className="mobileNav_container">
+    <nav className="mobileNav_container" style={{backgroundColor:'white'}}>
       <img style={{ width: '150px', height: '40px' }} src={logo} />
       {mobileNavIsOpen ? (
         <FaTimes

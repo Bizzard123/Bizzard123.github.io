@@ -52,8 +52,9 @@ const Card = ({ title, description, index }) => {
 
 const CardSection = () => {
   return (
-    <section className="card-section wow fadeInUp">
+    <section className="card-section wow fadeInUp" style={{backgroundColor:'white'}}>
         <div>
+          
         <div id="scroller">
           <div id="scroller-in">
             <h4>TOPTRACER RANGE</h4>
