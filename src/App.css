@@ -6,16 +6,16 @@ body {
   position: absolute;
   top: 50px; /* Adjust this based on your design */
   right: 120px;
-  background-color: #343483;
+  background-color: white;
   border: 1px solid rgb(227, 229, 232);
   padding: 20px 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  color: white;
+  color: black;
 }
 
 .custom-dropdown li:hover{
-  background-color: #444398;
+  background-color: lightgrey;
 }
 
 
@@ -50,22 +50,23 @@ body {
 /* HeroSection.css */
 .section-container {
   text-align: center;
-  background-color: white;
+  background-color: #f1f8e9;
   padding: 3% 10%;
+  padding-bottom: 60px;
 }
 
 .main-heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
   margin-top: 20px;
-  font-weight: 400;
-  color: #343483;
+  font-weight: 600;
+  color: black;
 }
 
 .sub-heading {
-  font-size: 2rem;
-  font-weight: 300;
-  color: #444398;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -76,21 +77,21 @@ body {
 }
 
 .centered-button {
-  background-color: #343483; /* Example background color */
+  background-color: #000; /* Example background color */
   color: #fff;
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  border: 1px solid #4b0082;
-  border-radius: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
 
 .centered-button:hover {
   background-color: white; /* Change background color on hover */
-  border: 1px solid #343483;
-  color: #343483;
+  border: 1px solid black;
+  color: black;
 }
 
 .centered-button-inverted {
@@ -98,17 +99,17 @@ body {
   font-size: 1rem;
   border: none;
   background-color: white; /* Change background color on hover */
-  border: 1px solid #343483;
-  color: #343483;
+  border: 1px solid black;
+  color: black;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 15px;
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
 
 .centered-button-inverted:hover {
-  background-color: #343483; /* Example background color */
+  background-color: black; /* Example background color */
   color: #fff;
-  border: 1px solid #4b0082;
+  border: 1px solid black;
 }
 
 .floating-text {
@@ -168,8 +169,8 @@ body {
   background-size: cover;
   background-position: center;
   background-color: white;
-  border: 1px solid #343483;
-  color: #343483;
+  border: 1px solid black;
+  color: black;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -460,17 +461,24 @@ button:hover {
 .container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .left-section1 {
   width: 100%; /* Adjust as needed */
   margin-bottom: 100px;
   position: static;
+  padding-right: 20px;
 }
 
+@media (max-width: 500px){
+  .container{
+    flex-wrap: wrap
+  }
+}
 .right-section1 {
-  width: 100%; /* Adjust as needed */
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -491,6 +499,8 @@ button:hover {
 .section {
   display: flex;
   padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
   transition: background-color 0.3s ease;
 }
 
@@ -499,17 +509,20 @@ button:hover {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-  font-size: 24px;
+  transition: background-color 0.5s ease;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .topic:hover {
-  background-color: #ddd;
+  background-color: #f1f8e9;
 }
 
 .topic.active {
   background-color: #444398;
-  color: #fff;
+  color: #000;
+  padding: 20px;
+  padding-right: 30px;
 }
 
 .right-column {
@@ -520,7 +533,9 @@ button:hover {
 
 .description {
   background-color: #fff;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
   min-height: 300px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -543,12 +558,12 @@ button:hover {
 
 .left-column {
   flex: 1;
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 10px;
   transition: background-color 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .topic-container {
@@ -561,12 +576,98 @@ button:hover {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
+  font-weight: 300;
   font-size: 18px;
   margin-top: 10px;
 }
 
 .topic.active .topic-description {
   opacity: 1;
-  max-height: 100px; /* Set your desired max height */
+  max-height: 150px; /* Set your desired max height */
   transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+
+/* styles.css */
+
+/* DarkSection styles */
+.DarkSection {
+  min-height: 60vh;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.DarkSection .left-content {
+  width: 60%;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.DarkSection h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.DarkSection p {
+  font-size: 1.5rem;
+  color: #8E8E8E;
+  margin-bottom: 20px;
+}
+
+.DarkSection .left-content button {
+  background-color: #B1FC03;
+  color: black;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.DarkSection .right-content {
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: #B1FC03;
+  color: black;
+  padding: 30px;
+  width: 25%;
+}
+
+.DarkSection .right-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.DarkSection form div {
+  margin-bottom: 10px;
+}
+
+.DarkSection input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.DarkSection input::placeholder{
+  color: #000;
+}
+
+@media (max-width:500px) {
+  .DarkSection{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .DarkSection .right-content{
+    width: 70%;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
 }

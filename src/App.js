@@ -12,6 +12,7 @@ import CardSection from './components/CardSection';
 import CardsSection from './components/CardsSection';
 import YourComponent from './components/TopicSection';
 import MobileNavbar from './components/navbar/MobileNav';
+import DarkSection from './components/DarkSection';
 
 
 const App = () => {
@@ -30,10 +31,10 @@ const App = () => {
       <HeroSection />
       {/* <FloatingText /> */}
       <Card />
-      <TwoSectionsPage />
       <CardSection />
-      <CardsSection />
       <YourComponent />
+      <CardsSection />
+      <DarkSection />
       <Footer />
     </div>
   );

@@ -1,28 +1,40 @@
 import React from 'react';
+
+
 const cardContents = [
   {
-    title: 'Title 1',
-    description: 'Description for Title 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Idea',
+    description: 'We meet with your team to learn more about your project idea and goals. After that, our team will work together to create an action plan and proposal for your project.',
+    color: '#f1f8e9'
   },
   {
-    title: 'Title 2',
-    description: 'Description for Title 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Research',
+    description: 'We will share a detailed questionnaire to analyze your business in-depth. After that, we will be able to create a tailor-made design to reach your business goals.',
+    color:'#ecf0f3'
   },
   {
-    title: 'Title 3',
-    description: 'Description for Title 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Web Design',
+    description: 'We will design a mockup or prototype of your website and present it to you. Once with the initial mockup, we will start the revision process to perfect it.',
+    color:'#f3e5f5'
   },
   {
-    title: 'Title 4',
-    description: 'Description for Title 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Development',
+    description: 'We develop websites using the best practices and standards. So you have a perfectly responsive, SEO-friendly, and highly conversion-oriented website.',
+    color:'#feefdb'
   },
   {
-    title: 'Title 5',
-    description: 'Description for Title 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Launch',
+    description: 'When the project is completed, we will schedule a 2hr session to train your team on using, editing, and taking advantage of your new website.',
+    color:'#E1F5FE'
   },
+  {
+    title: "Support",
+    description: "We keep a close relationship and communication with your team so we can help you with future design or development needs in the long term.",
+    color:'#ecf0f3'
+  }
 ];
 
-const Card = ({ title, description, index }) => {
+const Card = ({ title, description, index, color }) => {
   const topValue = 5 + index * 10;
 
   const cardStyle = {
@@ -34,8 +46,8 @@ const Card = ({ title, description, index }) => {
     flexDirection: 'row',
     position: 'sticky',
     top: `${topValue}px`,
-    backgroundColor: '#fff',
-    border:'1px solid red'
+    backgroundColor: `${color}`,
+    border:`1px solod ${color}`
   };
 
   return (
@@ -43,7 +55,7 @@ const Card = ({ title, description, index }) => {
       <div className="card-content1">
         <h2>{title}</h2>
         <p>{description}</p>
-        <button>Read More</button>
+        {/* <button>Read More</button> */}
       </div>
     </div>
   );
@@ -75,8 +87,8 @@ const CardSection = () => {
         <div className="container">
   <div className="left-section1">
     <div className='stickySection'>
-    <h2>Main Title</h2>
-    <p>Main description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h2 style={{fontSize:'2.5rem'}}>We lead you through every step</h2>
+    <p style={{fontSize:'1.5rem'}}>From creative design to technical solutions, our services define industry excellence.</p>
   </div>
   </div>
   <div className="right-section1">

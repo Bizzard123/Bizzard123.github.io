@@ -20,20 +20,20 @@ Contact us today to kickstart your digital adventure, or just swing by for a cha
       <div className="right-section wow fadeInRight" data-wow-duration="2s">
         {/* Cards go here */}
         <div className="card1">
-          <h2>Design</h2>
-          <p>Our expert designers combine user-centered design principles with cutting-edge technologies to create interfaces that are not only visually stunning but also highly functional and user-friendly.</p>
+          <h2></h2>
+          <p></p>
         </div>
         <div className="card1">
-          <h2>Tech Wixardy</h2>
-          <p>Custom Software Development Tailored software solutions to streamline operations, enhance efficiency, and drive growth.</p>
+          <h2></h2>
+          <p></p>
         </div>
         <div className="card1">
-          <h2>Web Enchantment</h2>
-          <p>Say goodbye to boring websites and hello to digital masterpieces that'll leave your audience spellbound.</p>
+          <h2></h2>
+          <p></p>
         </div>
         <div className="card1">
-          <h2>Digital Marketing</h2>
-          <p>Strategic digital campaigns to boost your online presence, engage your audience, and maximize ROI.</p>
+          <h2></h2>
+          <p></p>
         </div>
         {/* Repeat for other cards */}
       </div>

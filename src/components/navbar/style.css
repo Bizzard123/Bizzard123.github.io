@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    background-color: white;
+    background-color: #f1f8e9;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 10px 30px;
@@ -30,7 +30,7 @@
   /* Mobile Navbar */
   .menu_icon {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 20px;
     cursor: pointer;
     z-index: 2;
