@@ -20,7 +20,7 @@ const YourComponent = () => {
         Our Services
       </div>
 
-      <div className="section-text" style={{ textAlign: 'center', fontSize: '20px', margin: '0 10%',fontWeight:'400' }}>
+      <div className="section-text" style={{ textAlign: 'center', fontSize: '20px', margin: '0 10%',fontWeight:'400',color:'#383838' }}>
       <p>Ready to Join the Magic Show? Take the first step towards digital success with Bizzard.</p><p>
 Contact us today to kickstart your digital adventure, or just swing by for a chat and some virtual coffee. The stage is set – are you ready to steal the spotlight?
 </p>

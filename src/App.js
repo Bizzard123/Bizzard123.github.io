@@ -4,15 +4,15 @@ import Navbar from './components/navbar/Navbar';
 import './App.css';
 import WOW from 'wowjs';
 import HeroSection from './components/HeroSection';
-import FloatingText from './components/Scroll';
 import Card from './components/Cards';
-import TwoSectionsPage from './components/TwoSections';
 import Footer from './components/Footer';
 import CardSection from './components/CardSection';
 import CardsSection from './components/CardsSection';
 import YourComponent from './components/TopicSection';
 import MobileNavbar from './components/navbar/MobileNav';
 import DarkSection from './components/DarkSection';
+import FAQSection from './components/Faqs';
+import CallSection from './components/CallSection';
 
 
 const App = () => {
@@ -31,10 +31,12 @@ const App = () => {
       <HeroSection />
       {/* <FloatingText /> */}
       <Card />
+      <CardsSection />
       <CardSection />
       <YourComponent />
-      <CardsSection />
+      <CallSection />
       <DarkSection />
+      <FAQSection />
       <Footer />
     </div>
   );

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaReact, FaAngular, FaHtml5, FaNodeJs, FaCss3, FaVuejs, FaBootstrap, FaJsSquare, FaSass } from 'react-icons/fa';
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Card = () => {
   return (
@@ -37,6 +39,67 @@ const Card = () => {
     </div>
     </div>
     </div>
+
+    <div id="scroller">
+      <div id="scroller-in">
+        <h4><span className="centreAlign"><FaReact /> React</span></h4>
+        <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
+        <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
+        <h4><span className="centreAlign"><FaHtml5 /> HTML</span></h4>
+        <h4><span className="centreAlign"><FaNodeJs /> Node.js</span></h4>
+      </div>
+      <div id="scroller-in">
+        <h4><span className="centreAlign"><FaCss3 /> CSS</span></h4>
+        <h4><span className="centreAlign"><FaVuejs /> Vue.js</span></h4>
+        <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
+        <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
+        <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+      </div>
+      <div id="scroller-in">
+        <h4><span className="centreAlign"><FaReact /> React</span></h4>
+        <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
+        <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
+        <h4><span className="centreAlign"><FaHtml5 /> HTML</span></h4>
+        <h4><span className="centreAlign"><FaNodeJs /> Node.js</span></h4>
+      </div>
+      <div id="scroller-in">
+        <h4><span className="centreAlign"><FaCss3 /> CSS</span></h4>
+        <h4><span className="centreAlign"><FaVuejs /> Vue.js</span></h4>
+        <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
+        <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
+        <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+      </div>
+      <div id="scroller-in">
+        <h4><span className="centreAlign"><FaReact /> React</span></h4>
+        <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
+        <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
+        <h4><span className="centreAlign"><FaHtml5 /> HTML</span></h4>
+        <h4><span className="centreAlign"><FaNodeJs /> Node.js</span></h4>
+      </div>
+      <div id="scroller-in">
+        <h4><span className="centreAlign"><FaCss3 /> CSS</span></h4>
+        <h4><span className="centreAlign"><FaVuejs /> Vue.js</span></h4>
+        <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
+        <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
+        <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+      </div>
+      <div id="scroller-in">
+        <h4><span className="centreAlign"><FaReact /> React</span></h4>
+        <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
+        <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
+        <h4><span className="centreAlign"><FaHtml5 /> HTML</span></h4>
+        <h4><span className="centreAlign"><FaNodeJs /> Node.js</span></h4>
+      </div>
+      <div id="scroller-in">
+        <h4><span className="centreAlign"><FaCss3 /> CSS</span></h4>
+        <h4><span className="centreAlign"><FaVuejs /> Vue.js</span></h4>
+        <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
+        <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
+        <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+      </div>
+    </div>
+
+
     </div>
   );
 };

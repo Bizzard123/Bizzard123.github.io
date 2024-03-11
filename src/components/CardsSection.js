@@ -2,33 +2,38 @@ import React from 'react';
 
 const CardsSection = () => {
   return (
-    <div className='wow slideInLeft' style={{ padding: '5%',backgroundColor:'#343483',color:'white' }}>
-      <h1>Section Title</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
-        <div style={{ width: '280px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border:'1px solid '}}>
-          <img src="https://via.placeholder.com/150" alt="Placeholder" style={{ width: '100%', height: 'auto', borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} />
-          <div style={{ padding: '15px', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', position: 'relative',backgroundColor:'#444398'}}>
-            <h2>Title 1</h2>
-            <p style={{ paddingTop: '10px' }}>Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
+    <div className='wow slideInLeft' style={{ padding: '5%',backgroundColor:'white', color: 'black' }}>
+      <div className="section-heading" style={{ textAlign: 'center', fontSize: '30px', fontWeight: '700', margin: '20px 0' }}>
+        Why We Stand Out?
+      </div>
+
+      <div className="section-text" style={{ textAlign: 'center', fontSize: '20px', marginBottom: '50px',fontWeight:'400',color:'#383838'}}>
+      <p>Web design involves creating and designing websites, including layout, content, and user experience.
+</p>
+      </div>
+      <div className='cardContainerUsp'>
+        <div className='cardUsp' style={{backgroundColor:'#ecf0f3'}}>
+          <img src="https://via.placeholder.com/150" alt="Placeholder" />
+          <div className='cardContentUsp'>
+            <h2 className='cardTitleUsp'>Innovative technology solutions
+</h2>
+            <p className='cardDescriptionUsp'>We pride ourselves on our ability to develop and implement cutting-edge technologies that solve problems in unique and efficient ways.</p>
           </div>
         </div>
 
-        <div style={{ width: '280px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border:'1px solid '}}>
-          <img src="https://via.placeholder.com/150" alt="Placeholder" style={{ width: '100%', height: 'auto', borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} />
-          <div style={{ padding: '15px', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', position: 'relative',backgroundColor:'#444398'}}>
-            <h2>Title 1</h2>
-            <p style={{ paddingTop: '10px' }}>Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
+        <div className='cardUsp' style={{backgroundColor:'#feefdb'}}>
+          <img src="https://via.placeholder.com/150" alt="Placeholder" />
+          <div className='cardContentUsp'>
+            <h2 className='cardTitleUsp'>User friendly interfaces</h2>
+            <p className='cardDescriptionUsp'>We prioritise intuitive interfaces and seamless interactions by making our services easy and enjoyable to use.</p>
           </div>
         </div>
 
-        <div style={{ width: '280px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border:'1px solid '}}>
-          <img src="https://via.placeholder.com/150" alt="Placeholder" style={{ width: '100%', height: 'auto', borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} />
-          <div style={{ padding: '15px', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', position: 'relative',backgroundColor:'#444398'}}>
-            <h2>Title 1</h2>
-            <p style={{ paddingTop: '10px' }}>Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
+        <div className='cardUsp' style={{backgroundColor:'#ecf0f3'}}>
+          <img src="https://via.placeholder.com/150" alt="Placeholder" />
+          <div className='cardContentUsp'>
+            <h2 className='cardTitleUsp'>Exceptional customer service</h2>
+            <p className='cardDescriptionUsp'>Whether it's offering 24/7 support, quick response times to inquiries, or personalized assistance, we go above and beyond to address customer needs.</p>
           </div>
         </div>
       </div>

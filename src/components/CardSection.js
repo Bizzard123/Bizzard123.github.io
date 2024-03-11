@@ -65,30 +65,11 @@ const Card = ({ title, description, index, color }) => {
 const CardSection = () => {
   return (
     <section className="card-section wow fadeInUp" style={{backgroundColor:'white'}}>
-        <div>
-          
-        <div id="scroller">
-          <div id="scroller-in">
-            <h4>TOPTRACER RANGE</h4>
-            <h4>GOLF LESSONS</h4>
-            <h4>ADVENTURE GOLF</h4>
-            <h4>COFFEE SHOP</h4>
-            <h4>LEAGUES</h4>
-          </div>
-          <div id="scroller-in">
-            <h4>TOPTRACER RANGE</h4>
-            <h4>GOLF LESSONS</h4>
-            <h4>ADVENTURE GOLF</h4>
-            <h4>COFFEE SHOP</h4>
-            <h4>LEAGUES</h4>
-          </div>
-        </div>
-        </div>
         <div className="container">
   <div className="left-section1">
     <div className='stickySection'>
     <h2 style={{fontSize:'2.5rem'}}>We lead you through every step</h2>
-    <p style={{fontSize:'1.5rem'}}>From creative design to technical solutions, our services define industry excellence.</p>
+    <p style={{fontSize:'1.5rem',color:'#383838'}}>From creative design to technical solutions, our services define industry excellence.</p>
   </div>
   </div>
   <div className="right-section1">

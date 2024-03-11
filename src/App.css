@@ -133,7 +133,6 @@ body {
   height: 280px;
   gap: 20px;
   overflow-x: auto; /* Allow horizontal scrolling if cards overflow */
-  margin-bottom: 20px; /* Add some margin to the bottom for better spacing */
   padding-left: 5%;
 }
 
@@ -392,15 +391,6 @@ body {
   margin: 0;
 }
 
-button {
-  background-color: #4b0082;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 button:hover {
   background-color: #6a5acd;
 }
@@ -434,19 +424,24 @@ button:hover {
 
 #scroller h4 {
   display: inline-block;
-  font-size: 120px;
-  font-weight: 900;
-  font-family: poppins;
+  font-size: 40px;
   margin-top: 30px;
   margin-bottom: 60px;
   margin-right: 20px;
   transition: all linear 0.3s;
-  color: #000;
+  color: rgb(26, 26, 26);
   -webkit-text-stroke: 2px #ffffff;
 }
+.centreAlign{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10px;
+}
+
 #scroller h4:hover {
-  color: #343483;
-  -webkit-text-stroke: 2px #343483;
+  color: black;
+  -webkit-text-stroke: 2px #000;
 }
 
 @keyframes scroll {
@@ -671,3 +666,156 @@ button:hover {
     margin-left: 0;
   }
 }
+.faq-section {
+  width: 80%;
+  margin: auto;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding: 5px;
+  overflow: hidden;
+  transition: height 0.3s ease; /* Add transition property */
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.question-content {
+  flex: 1;
+}
+
+.faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease; /* Add transition properties */
+}
+
+.faq-item.open {
+  height: auto; /* Auto height for the open state */
+}
+
+.faq-item.open .faq-answer {
+  opacity: 1;
+  max-height: 200px; /* Set a sufficiently large max-height for smooth expansion */
+}
+
+.faq-item:hover{
+  background-color: #f1f8e9;
+}
+.faq-item:hover .faq-question{
+  background-color: #f1f8e9;
+}
+
+
+.toggle-button {
+  color: rgb(56,56,56);
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+
+/* style.css */
+
+.cardContainerUsp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardUsp {
+  width: 30%;
+  min-height: 475px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+}
+
+@media (max-width:786px) {
+  .cardContainerUsp{
+    flex-direction: column;
+  }
+  .cardUsp{
+    width: 90%;
+  }
+}
+
+.cardUsp img {
+  width: 96%;
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 2%; /* Space between image and card border */
+}
+
+.cardContentUsp {
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+
+.cardTitleUsp {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.cardDescriptionUsp {
+  color: black;
+}
+
+/* styles.css */
+
+.call-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: white;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.call-item {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.call-item p{
+  font-size: 20px;
+  color: #383838;
+}
+
+@media (max-width: 786px) {
+  .call-item {
+    width: 80%;
+    padding-left: 30px;
+    flex-direction: column;
+  }
+  .call-section{
+    gap: 2px;
+    justify-content: flex-start;
+  }
+}
+
