@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar wow slideInDown">
       <img style={{ width: '167px', height: '30px' }} src={logo} />
       <div>
         <ul className="menu_list">

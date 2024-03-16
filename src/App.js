@@ -13,6 +13,7 @@ import MobileNavbar from './components/navbar/MobileNav';
 import DarkSection from './components/DarkSection';
 import FAQSection from './components/Faqs';
 import CallSection from './components/CallSection';
+import AboveFooter from './components/AboveFooter';
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
       <CallSection />
       <DarkSection />
       <FAQSection />
+      <AboveFooter />
       <Footer />
     </div>
   );

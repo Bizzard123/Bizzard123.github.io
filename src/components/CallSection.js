@@ -4,7 +4,7 @@ import { FaPhone, FaRegClipboard, FaPen } from 'react-icons/fa';
 
 const CallSection = () => {
   return (
-    <div className="call-section">
+    <div className="call-section wow fadeInUp">
         <div className="call-item">
         <h2 style={{fontSize:'2.5rem',marginTop:'15px',marginBottom:'5px'}}>What Awaits you to Call?</h2>
       </div>

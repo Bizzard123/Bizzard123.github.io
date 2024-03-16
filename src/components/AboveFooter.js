@@ -1,48 +1,24 @@
+// SectionComponent.js
 import React from 'react';
 import { FaReact, FaAngular, FaHtml5, FaNodeJs, FaCss3, FaVuejs, FaBootstrap, FaJsSquare, FaSass } from 'react-icons/fa';
 import { TbBrandNextjs } from "react-icons/tb";
 
-const Card = () => {
+
+const AboveFooter = () => {
   return (
-    <div style={{backgroundColor:'#f1f8e9',marginTop:'-25px'}}>
-    <div className='wow fadeInUp' style={{display:'flex',justifyContent:'center'}}>
-      <div className='cardContainer'>
-        <div className="card">
-      <div className="card-content">
-        {/* <h2>Unlock Your Digital Potential</h2>
-        <p>Whether you're a startup looking to make a splash or an established business aiming to stay ahead of the curve, our tailored solutions are designed to meet your unique needs and objectives.</p> */}
+    <div>
+    <div className="section-container wow fadeInUp">
+        <div className='AboveFooter'>
+        <p className="main-heading">We make your SaaS business shine</p>
+        <p className="sub-heading">Book a call to see how Perspective Design can help elevate your company's designs to the next level.</p>
+      <div className="button-container">
+        <button className="centered-button-inverted">Click me</button>
       </div>
-    </div>
-    <div className="card">
-      <div className="card-content">
-        {/* <h2>Masterminds at Your Service</h2>
-        <p>Think of us as your digital dream team – a band of misfits, innovators, and all-around cool cats ready to revolutionize your online presence.</p> */}
       </div>
-    </div>
-    <div className="card">
-      <div className="card-content">
-        {/* <h2>Proven Track Record</h2>
-        <p>Don't just take our word for it. Our portfolio speaks volumes, showcasing a diverse range of successful projects and satisfied clients across various industries.</p> */}
       </div>
-    </div>
-    <div className="card">
-      <div className="card-content">
-        {/* <h2>Collaborative Approach</h2>
-        <p> We believe in collaboration and transparency every step of the way. When you partner with Bizzard, you're not just a client – you're an integral part of the creative process.</p> */}
-      </div>
-    </div>
-    <div className="card">
-      <div className="card-content">
-        {/* <h2>Results-Driven Strategies</h2>
-        <p>Our team of experts combines data-driven insights with creative flair to craft strategies that deliver measurable results. From increasing brand visibility to driving conversions, we're committed to your success.</p> */}
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <div id="scroller">
+      <div id="scroller1">
      
-      <div id="scroller-in">
+      <div id="scroller-in1">
         <h4><span className="centreAlign"><FaReact /> React</span></h4>
         <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
         <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
@@ -85,10 +61,8 @@ const Card = () => {
         <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
       </div>
     </div>
-
-
     </div>
   );
 };
 
-export default Card;
+export default AboveFooter;

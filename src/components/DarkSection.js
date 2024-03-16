@@ -4,7 +4,7 @@ import React from 'react';
 
 const DarkSection = () => {
   return (
-    <div className="DarkSection">
+    <div className="DarkSection wow fadeInUp">
       <div className="left-content">
         <h2>Crafting Digital Success with Codify</h2>
         <p>Discover the innovative marketing strategies that set Codify apart, driving success in the digital landscape.</p>

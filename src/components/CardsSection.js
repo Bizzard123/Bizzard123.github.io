@@ -2,7 +2,10 @@ import React from 'react';
 
 const CardsSection = () => {
   return (
-    <div className='wow slideInLeft' style={{ padding: '5%',backgroundColor:'white', color: 'black' }}>
+    <div className='wow fadeInUp' style={{ padding: '5%',display:'flex',flexDirection:'column',backgroundColor:'white', color: 'black' }}>
+      <div style={{ padding: '8px 12px', margin: '4px auto', borderRadius: '18px', backgroundColor: 'white', color: 'black', display: 'inline-block', border: '1px solid #ccc' }}>
+    Benefits
+  </div>
       <div className="section-heading" style={{ textAlign: 'center', fontSize: '30px', fontWeight: '700', margin: '20px 0' }}>
         Why We Stand Out?
       </div>

@@ -35,7 +35,7 @@ const cardContents = [
 ];
 
 const Card = ({ title, description, index, color }) => {
-  const topValue = 5 + index * 10;
+  const topValue = 30 + index * 20;
 
   const cardStyle = {
     width: '95%',
@@ -68,6 +68,9 @@ const CardSection = () => {
         <div className="container">
   <div className="left-section1">
     <div className='stickySection'>
+    <div style={{ padding: '8px 12px', margin: '4px auto', borderRadius: '18px', backgroundColor: 'white', color: 'black', display: 'inline-block', border: '1px solid #ccc' }}>
+    Navigating Success Together
+  </div>
     <h2 style={{fontSize:'2.5rem'}}>We lead you through every step</h2>
     <p style={{fontSize:'1.5rem',color:'#383838'}}>From creative design to technical solutions, our services define industry excellence.</p>
   </div>

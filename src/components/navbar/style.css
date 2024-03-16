@@ -6,6 +6,7 @@
   
   ul li {
     padding: 10px;
+    font-weight: 550;
     cursor: pointer;
   }
   
@@ -33,7 +34,7 @@
     top: 30px;
     right: 20px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 99;
   }
   
   .mobileNav_menu_container {
@@ -47,7 +48,7 @@
     position: absolute;
     width: 100%;
     margin: auto;
-    background: #343483;
+    background: rgb(26, 26, 26);
     border-radius: 4px;
     color: white;
     transition: ease all 0.4s;

@@ -274,75 +274,90 @@ body {
   
 }
 
-/* Footer.css */
-
-.footer {
-  background-color: #343483;
-  padding: 20px 0;
-  color: white;
-  text-align: center;
-}
-
-.footer-container {
+.sectionFooter {
   display: flex;
-  justify-content: space-around;
+  color: white;
+  background-color: rgb(26, 26, 26);
+  justify-content: space-between;
+  padding-top: 50px;
   flex-wrap: wrap;
 }
 
-.footer-column {
-  width: 45%; /* Adjust the width as needed */
+.componentIcon {
+  width: 30%;
 }
 
-.footer-column h3 {
-  border-bottom: 2px solid white; /* Add a white border below the heading */
-  padding-bottom: 5px;
+.componentIcon h2{
+  padding-left: 60px;
+  margin-bottom: 10px;
 }
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
+.componentIcon p{
+  padding-left: 60px;
+  margin-bottom: 20px;
+  color: #8e8e8e;
 }
-
-.footer-column li {
-  margin: 8px 0;
+.componentIcon div{
+  padding-left: 50px;
+  margin-top: 5px;
 }
-
-/* Add a line between columns */
-.footer-column + .footer-column {
-  margin-left: 20px;
-}
-
-.social-icons {
-  margin-top: 20px; /* Add some space between columns and social icons */
-}
-
-.icon {
-  font-size: 24px;
-  margin: 0 10px;
-  color: #444398;
-  background-color: white;
+.componentIcon svg {
+  margin: 5px;
+  color: #8e8e8e;
   padding: 10px;
-  border: 1px solid #444398;
-  border-radius: 50%;
-  transition: all 0.3s ease;
+  font-size: 24px;
+  border-radius: 30%;
+  border: 1px solid #8e8e8e;
+  background-color: rgb(26, 26, 26);
+}
+.componentIcon svg:hover {
+  color: #B1FC03;
+  border: 1px solid #B1FC03;
 }
 
-.icon:hover {
+.componentFooter {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.componentFooter ul li a {
   color: white;
-  background-color: #444398;
-  border: 1px solid white;
 }
 
-/* Add a line below social icons */
-.social-icons::after {
-  content: '';
-  display: block;
-  margin-top: 20px;
-  border-bottom: 2px solid white;
+.componentFooter ul li a:hover {
+  color: #8e8e8e;
 }
 
+@media (max-width: 768px) {
+  .sectionFooter {
+    flex-direction: column;
+  }
 
+  .componentFooter {
+    width: 100%;
+    text-align: center;
+  }
 
+  .componentIcon {
+    width: 100%;
+    text-align: left;
+  }
+  .componentIcon h2{
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+  .componentIcon p{
+    padding-left: 25px;
+    color: #8e8e8e;
+    margin-bottom: 20px;
+  }
+  .componentIcon div{
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
 
 /* CardSection.css */
 
@@ -401,7 +416,51 @@ button:hover {
   }
 }
 
+#scroller1 {
+  background-color: #B1FC03;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+#scroller1::-webkit-scrollbar {
+  display: none;
+}
+#scroller-in1 {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 120s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
+#scroller1 h4 {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all linear 1s;
+  color: black;
+}
+.centreAlign{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10px;
+}
+
+.centreAlign svg{
+  height: 35px;
+  width: 35px;
+}
+#scroller1 h4:hover {
+  color: black;
+  -webkit-text-stroke: 1px #000;
+}
 #scroller {
   /* background-color: red; */
   white-space: nowrap;
@@ -417,7 +476,7 @@ button:hover {
   display: inline-block;
   white-space: nowrap;
   animation-name: scroll;
-  animation-duration: 40s;
+  animation-duration: 120s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -428,9 +487,8 @@ button:hover {
   margin-top: 30px;
   margin-bottom: 60px;
   margin-right: 20px;
-  transition: all linear 0.3s;
-  color: rgb(26, 26, 26);
-  -webkit-text-stroke: 2px #ffffff;
+  transition: all linear 1s;
+  color: #8E8E8E;
 }
 .centreAlign{
   display: flex;
@@ -439,9 +497,13 @@ button:hover {
   margin: 10px;
 }
 
+.centreAlign svg{
+  height: 35px;
+  width: 35px;
+}
 #scroller h4:hover {
   color: black;
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 1px #000;
 }
 
 @keyframes scroll {
@@ -452,6 +514,7 @@ button:hover {
     transform: translateX(-100%);
   }
 }
+
 
 .container {
   display: flex;
@@ -818,4 +881,13 @@ button:hover {
     justify-content: flex-start;
   }
 }
-
+.AboveFooter{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+@media (max-width:700px) {
+  .AboveFooter{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
