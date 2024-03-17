@@ -1,7 +1,10 @@
 body {
   overflow-x: hidden;
 }
-
+.root{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .custom-dropdown {
   position: absolute;
   top: 50px; /* Adjust this based on your design */
