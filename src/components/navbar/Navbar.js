@@ -2,20 +2,26 @@ import React, { useState } from "react";
 import "./style.css";
 import logo from "./logo.jpeg";
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { Link } from "react-router-dom";
 
-const Dropdown = () => {
+// Define Dropdown as a separate component that receives services as props
+const Dropdown = ({ services }) => {
   return (
     <div className="custom-dropdown">
       <ul>
-        <li>Service 1</li>
-        <li>Service 2</li>
-        <li>Service 3</li>
+        {/* Map through the services array to display each service title */}
+        {services.map((service) => (
+          <Link to={`/services/${service.id}`}><li key={service.id}>
+            {/* Use Link component to link to the Service Detail page */}
+            {service.title}
+          </li></Link>
+        ))}
       </ul>
     </div>
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ services }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -24,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar wow slideInDown">
-      <img style={{ width: '167px', height: '30px' }} src={logo} />
+      <img style={{ width: '167px', height: '30px' }} src={logo} alt="Logo" />
       <div>
         <ul className="menu_list">
           <li>Home</li>
@@ -36,7 +42,8 @@ const Navbar = () => {
           >
             Services
             {isDropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-            {isDropdownOpen && <Dropdown />}
+            {/* Pass services as props to Dropdown component */}
+            {isDropdownOpen && <Dropdown services={services} />}
           </li>
           <li>About</li>
           <li>Work</li>

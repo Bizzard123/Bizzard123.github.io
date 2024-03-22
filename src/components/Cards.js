@@ -1,6 +1,10 @@
 import React from 'react';
 import { FaReact, FaAngular, FaHtml5, FaNodeJs, FaCss3, FaVuejs, FaBootstrap, FaJsSquare, FaSass } from 'react-icons/fa';
 import { TbBrandNextjs } from "react-icons/tb";
+import { SiMicrosoftsharepoint } from 'react-icons/si';
+import { FaTasks, FaMagic } from 'react-icons/fa';
+import { GiPowerLightning } from 'react-icons/gi';
+import { SiMongodb, SiExpress, SiReact, SiNodeDotJs } from 'react-icons/si';
 
 const Card = () => {
   return (
@@ -43,6 +47,11 @@ const Card = () => {
     <div id="scroller">
      
       <div id="scroller-in">
+      <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
         <h4><span className="centreAlign"><FaReact /> React</span></h4>
         <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
         <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
@@ -53,6 +62,11 @@ const Card = () => {
         <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
         <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
         <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+        <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
         <h4><span className="centreAlign"><FaReact /> React</span></h4>
         <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
         <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
@@ -63,6 +77,11 @@ const Card = () => {
         <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
         <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
         <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+        <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
         <h4><span className="centreAlign"><FaReact /> React</span></h4>
         <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
         <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
@@ -73,6 +92,11 @@ const Card = () => {
         <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
         <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
         <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+        <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
         <h4><span className="centreAlign"><FaReact /> React</span></h4>
         <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
         <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
@@ -83,6 +107,11 @@ const Card = () => {
         <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
         <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
         <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+        <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
       </div>
     </div>
 

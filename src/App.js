@@ -1,46 +1,42 @@
 // App.js
-import React,{useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import './App.css';
 import WOW from 'wowjs';
-import HeroSection from './components/HeroSection';
-import Card from './components/Cards';
 import Footer from './components/Footer';
-import CardSection from './components/CardSection';
-import CardsSection from './components/CardsSection';
-import YourComponent from './components/TopicSection';
 import MobileNavbar from './components/navbar/MobileNav';
-import DarkSection from './components/DarkSection';
-import FAQSection from './components/Faqs';
-import CallSection from './components/CallSection';
-import AboveFooter from './components/AboveFooter';
-
+import Home from './pages/Home';
+import ServiceDetail from './pages/ServiceDetails';
 
 const App = () => {
-
   useEffect(() => {
     new WOW.WOW({
       live: false
     }).init();
-  }, [])
+  }, []);
 
+  const [services, setServices] = useState([
+    { id: 1, title: 'Design', description: 'Description for Service 1' },
+    { id: 2, title: 'Web Development', description: 'Description for Service 2' },
+    { id: 3, title: 'Mobile App Dev', description: 'Description for Service 1' },
+    { id: 4, title: 'Cloud Services', description: 'Description for Service 2' },
+    { id: 5, title: 'Cloud Services', description: 'Description for Service 2' },
+    { id: 6, title: 'Custom Softwares', description: 'Description for Service 3' }
+  ]);
 
   return (
-    <div>
-      <Navbar />
-      <MobileNavbar />
-      <HeroSection />
-      {/* <FloatingText /> */}
-      <Card />
-      <CardsSection />
-      <CardSection />
-      <YourComponent />
-      <CallSection />
-      <DarkSection />
-      <FAQSection />
-      <AboveFooter />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Navbar services={services} />
+        <MobileNavbar />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/services/:id" element={<ServiceDetail services={services} />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

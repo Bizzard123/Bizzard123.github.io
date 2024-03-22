@@ -3,7 +3,6 @@ body {
 }
 #root{
   max-width: 100%;
-  overflow-x: hidden;
 }
 .custom-dropdown {
   position: absolute;
@@ -320,7 +319,6 @@ body {
 .componentFooter {
   width: 20%;
   margin-bottom: 20px;
-  padding: 10px;
   text-align: center;
 }
 
@@ -486,7 +484,7 @@ button:hover {
 
 #scroller h4 {
   display: inline-block;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 30px;
   margin-bottom: 60px;
   margin-right: 20px;
