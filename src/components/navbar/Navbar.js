@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import logo from "./logo.jpeg";
+import logo from "./logo.PNG";
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { Link } from "react-router-dom";
 
@@ -30,7 +30,7 @@ const Navbar = ({ services }) => {
 
   return (
     <nav className="navbar wow slideInDown">
-      <img style={{ width: '167px', height: '30px' }} src={logo} alt="Logo" />
+      <img style={{ width: '160px', height: '50px',mixBlendMode:'multiply' }} src={logo} alt="Logo" />
       <div>
         <ul className="menu_list">
           <li>Home</li>

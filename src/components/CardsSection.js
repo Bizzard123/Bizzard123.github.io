@@ -3,14 +3,14 @@ import React from 'react';
 const CardsSection = () => {
   return (
     <div className='wow fadeInUp' style={{ padding: '5%',display:'flex',flexDirection:'column',backgroundColor:'white', color: 'black' }}>
-      <div style={{ padding: '8px 12px', margin: '4px auto', borderRadius: '18px', backgroundColor: 'white', color: 'black', display: 'inline-block', border: '1px solid #ccc' }}>
+      <div className='chips'>
     Benefits
   </div>
-      <div className="section-heading" style={{ textAlign: 'center', fontSize: '30px', fontWeight: '700', margin: '20px 0' }}>
+      <div className="section-heading">
         Why We Stand Out?
       </div>
 
-      <div className="section-text" style={{ textAlign: 'center', fontSize: '20px', marginBottom: '50px',fontWeight:'400',color:'#383838'}}>
+      <div className="section-text">
       <p>Web design involves creating and designing websites, including layout, content, and user experience.
 </p>
       </div>

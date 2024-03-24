@@ -15,15 +15,15 @@ const YourComponent = () => {
   };
 
   return (
-    <div className=' wow fadeInUp' style={{backgroundColor:'white',marginTop:"-30px",paddingTop:'20px',display:'flex',flexDirection:'column'}}>
-      <div style={{ padding: '8px 12px',textAlign:'center', margin: '4px auto', borderRadius: '18px', backgroundColor: 'white', color: 'black', display: 'inline-block', border: '1px solid #ccc' }}>
+    <div className='wow fadeInUp' style={{padding:'5%',backgroundColor:'white',marginTop:"-30px",paddingTop:'20px',display:'flex',flexDirection:'column'}}>
+      <div className='chips'>
     Services
   </div>
-      <div className="section-heading" style={{ textAlign: 'center', fontSize: '30px', fontWeight: '700', margin: '20px 0' }}>
+      <div className="section-heading">
         Our Services
       </div>
 
-      <div className="section-text" style={{ textAlign: 'center', fontSize: '20px', margin: '0 10%',fontWeight:'400',color:'#383838' }}>
+      <div className="section-text">
       <p>Ready to Join the Magic Show? Take the first step towards digital success with Bizzard.</p><p>
 Contact us today to kickstart your digital adventure, or just swing by for a chat and some virtual coffee. The stage is set – are you ready to steal the spotlight?
 </p>

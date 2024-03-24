@@ -115,6 +115,77 @@ const Card = () => {
       </div>
     </div>
 
+    <div id="scroller">
+     
+      <div id="scrollerReverse-in">
+      <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
+        <h4><span className="centreAlign"><FaReact /> React</span></h4>
+        <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
+        <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
+        <h4><span className="centreAlign"><FaHtml5 /> HTML</span></h4>
+        <h4><span className="centreAlign"><FaNodeJs /> Node.js</span></h4>
+        <h4><span className="centreAlign"><FaCss3 /> CSS</span></h4>
+        <h4><span className="centreAlign"><FaVuejs /> Vue.js</span></h4>
+        <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
+        <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
+        <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+        <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
+        <h4><span className="centreAlign"><FaReact /> React</span></h4>
+        <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
+        <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
+        <h4><span className="centreAlign"><FaHtml5 /> HTML</span></h4>
+        <h4><span className="centreAlign"><FaNodeJs /> Node.js</span></h4>
+        <h4><span className="centreAlign"><FaCss3 /> CSS</span></h4>
+        <h4><span className="centreAlign"><FaVuejs /> Vue.js</span></h4>
+        <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
+        <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
+        <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+        <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
+        <h4><span className="centreAlign"><FaReact /> React</span></h4>
+        <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
+        <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
+        <h4><span className="centreAlign"><FaHtml5 /> HTML</span></h4>
+        <h4><span className="centreAlign"><FaNodeJs /> Node.js</span></h4>
+        <h4><span className="centreAlign"><FaCss3 /> CSS</span></h4>
+        <h4><span className="centreAlign"><FaVuejs /> Vue.js</span></h4>
+        <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
+        <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
+        <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+        <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
+        <h4><span className="centreAlign"><FaReact /> React</span></h4>
+        <h4><span className="centreAlign"><TbBrandNextjs /> Next.js</span></h4>
+        <h4><span className="centreAlign"><FaAngular /> Angular</span></h4>
+        <h4><span className="centreAlign"><FaHtml5 /> HTML</span></h4>
+        <h4><span className="centreAlign"><FaNodeJs /> Node.js</span></h4>
+        <h4><span className="centreAlign"><FaCss3 /> CSS</span></h4>
+        <h4><span className="centreAlign"><FaVuejs /> Vue.js</span></h4>
+        <h4><span className="centreAlign"><FaBootstrap /> Bootstrap</span></h4>
+        <h4><span className="centreAlign"><FaJsSquare /> JavaScript</span></h4>
+        <h4><span className="centreAlign"><FaSass /> Sass</span></h4>
+        <h4><span className="centreAlign"><SiMicrosoftsharepoint /> SharePoint</span></h4>
+      <h4><span className="centreAlign"><FaTasks /> Power Automate</span></h4>
+      <h4><span className="centreAlign"><FaMagic /> PowerApps</span></h4>
+      <h4><span className="centreAlign"><GiPowerLightning /> Power Platform</span></h4>
+      <h4><span className="centreAlign"><SiMongodb /> MERN Stack</span></h4>
+      </div>
+    </div>
+
 
     </div>
   );

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
 import { FaBars, FaTimes, FaAngleUp, FaAngleDown } from "react-icons/fa";
-import logo from './logo.jpeg';
+import logo from './logo.PNG';
+import logoDark from './logoDark.PNG';
 
 const MobileNavbar = () => {
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false);
@@ -22,8 +23,8 @@ const MobileNavbar = () => {
   });
 
   return (
-    <nav className="mobileNav_container wow slideInDown" style={{backgroundColor:'#f1f8e9',marginTop:'10px',borderTopLeftRadius:'20px',borderTopRightRadius:'20px'}}>
-      <img style={{ width: '150px', height: '40px' }} src={logo} />
+    <nav className={`mobileNav_container wow slideInDown ${mobileNavIsOpen ? 'mobileNav_open_bg' : ''}`} style={{marginTop:'10px',borderTopLeftRadius:'20px',borderTopRightRadius:'20px'}}>
+      <img style={{ width: '150px', height: '40px',margin:'10px',mixBlendMode:'multiply' }} src={mobileNavIsOpen ? logoDark : logo} />
       {mobileNavIsOpen ? (
         <FaTimes
           className="menu_icon"
@@ -44,12 +45,12 @@ const MobileNavbar = () => {
           } mobileNav_menu_list`}
         >
           <li>Home</li>
-          <li style={{display:'flex',alignItems:'center'}} onClick={handleServicesClick}>
+          <li style={{display:'flex',alignItems:'center',width:'89%',justifyContent:'space-between'}} onClick={handleServicesClick}>
             Services
             {servicesSublistVisible ? <FaAngleUp /> : <FaAngleDown />}
           </li>
           {servicesSublistVisible && (
-            <ul className="sublist">
+            <ul className="sublist" style={{}}>
               <li>Service 1</li>
               <li>Service 2</li>
               <li>Service 3</li>

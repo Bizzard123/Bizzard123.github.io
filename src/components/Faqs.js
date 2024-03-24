@@ -21,11 +21,11 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="wow fadeInUp" style={{backgroundColor:'white',paddingTop:'50px',paddingBottom:'50px',display:'flex',flexDirection:'column'}}>
-      <div style={{ padding: '8px 12px', margin: '4px auto', borderRadius: '18px', backgroundColor: 'white', color: 'black', display: 'inline-block', border: '1px solid #ccc' }}>
+    <div className="wow fadeInUp" style={{padding:'5%',backgroundColor:'white',paddingTop:'50px',paddingBottom:'50px',display:'flex',flexDirection:'column'}}>
+      <div className="chips">
     FAQs 
   </div>
-        <div className="section-heading" style={{ textAlign: 'center', fontSize: '30px', fontWeight: '700', margin: '0 0 40px 0' }}>
+        <div className="section-heading">
         Frequently Asked Questions
       </div>
     <div className="faq-section">
