@@ -1,10 +1,12 @@
 import React from 'react';
+import { BsStars } from "react-icons/bs";
 
 const CardsSection = () => {
   return (
     <div className='wow fadeInUp' style={{ padding: '5%',display:'flex',flexDirection:'column',backgroundColor:'white', color: 'black' }}>
-      <div className='chips'>
-    Benefits
+      <div style={{display:'flex',flexDirection:'column'}}>
+      <div className='chips' style={{minWidth:'70px',minHeight:'20px'}}>
+      <BsStars />{' '}Benefits
   </div>
       <div className="section-heading">
         Why We Stand Out?
@@ -13,6 +15,7 @@ const CardsSection = () => {
       <div className="section-text">
       <p>Web design involves creating and designing websites, including layout, content, and user experience.
 </p>
+      </div>
       </div>
       <div className='cardContainerUsp'>
         <div className='cardUsp' style={{backgroundColor:'#ecf0f3'}}>

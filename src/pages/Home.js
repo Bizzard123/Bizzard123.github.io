@@ -17,8 +17,8 @@ const Home = () => {
       <HeroSection />
       <Card />
       <CardsSection />
-      <CardSection />
       <YourComponent />
+      <CardSection />
       <CallSection />
       <DarkSection />
       <FAQSection />

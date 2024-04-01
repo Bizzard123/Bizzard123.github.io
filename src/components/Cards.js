@@ -8,7 +8,7 @@ import { SiMongodb, SiExpress, SiReact, SiNodeDotJs } from 'react-icons/si';
 
 const Card = () => {
   return (
-    <div style={{backgroundColor:'#f1f8e9',marginTop:'-25px'}}>
+    <div style={{backgroundColor:'#ffffff',marginTop:'-25px'}}>
     <div className='wow fadeInUp' style={{display:'flex',justifyContent:'center'}}>
       <div className='cardContainer'>
         <div className="card">

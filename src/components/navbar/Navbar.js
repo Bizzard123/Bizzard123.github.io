@@ -11,7 +11,7 @@ const Dropdown = ({ services }) => {
       <ul>
         {/* Map through the services array to display each service title */}
         {services.map((service) => (
-          <Link to={`/services/${service.id}`}><li key={service.id}>
+          <Link style={{color:'black',textDecoration:'none'}} to={`/services/${service.id}`}><li key={service.id}>
             {/* Use Link component to link to the Service Detail page */}
             {service.title}
           </li></Link>
@@ -30,7 +30,7 @@ const Navbar = ({ services }) => {
 
   return (
     <nav className="navbar wow slideInDown">
-      <img style={{ width: '160px', height: '50px',mixBlendMode:'multiply' }} src={logo} alt="Logo" />
+      <img style={{ width: '100px', height: '35px',mixBlendMode:'multiply' }} src={logo} alt="Logo" />
       <div>
         <ul className="menu_list">
           <li>Home</li>

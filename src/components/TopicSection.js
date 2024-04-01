@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaHandHoldingUsd } from "react-icons/fa";
+
 
 const YourComponent = () => {
   const topics = [
@@ -17,7 +19,7 @@ const YourComponent = () => {
   return (
     <div className='wow fadeInUp' style={{padding:'5%',backgroundColor:'white',marginTop:"-30px",paddingTop:'20px',display:'flex',flexDirection:'column'}}>
       <div className='chips'>
-    Services
+    <FaHandHoldingUsd/>{" "}Services
   </div>
       <div className="section-heading">
         Our Services

@@ -20,7 +20,6 @@ const App = () => {
     { id: 1, title: 'Design', description: 'Description for Service 1' },
     { id: 2, title: 'Web Development', description: 'Description for Service 2' },
     { id: 3, title: 'Mobile App Dev', description: 'Description for Service 1' },
-    { id: 4, title: 'Cloud Services', description: 'Description for Service 2' },
     { id: 5, title: 'Cloud Services', description: 'Description for Service 2' },
     { id: 6, title: 'Custom Softwares', description: 'Description for Service 3' }
   ]);

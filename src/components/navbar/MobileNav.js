@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { FaBars, FaTimes, FaAngleUp, FaAngleDown } from "react-icons/fa";
 import logo from './logo.PNG';
-import logoDark from './logoDark.PNG';
+import logoDark from './logoDark.png';
 
 const MobileNavbar = () => {
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const MobileNavbar = () => {
 
   return (
     <nav className={`mobileNav_container wow slideInDown ${mobileNavIsOpen ? 'mobileNav_open_bg' : ''}`} style={{marginTop:'10px',borderTopLeftRadius:'20px',borderTopRightRadius:'20px'}}>
-      <img style={{ width: '150px', height: '40px',margin:'10px',mixBlendMode:'multiply' }} src={mobileNavIsOpen ? logoDark : logo} />
+      <img style={{ width: '100px', height: '30px',margin:'10px' }} src={mobileNavIsOpen ? logoDark : logo} />
       {mobileNavIsOpen ? (
         <FaTimes
           className="menu_icon"
