@@ -322,6 +322,7 @@ body {
 
 .componentFooter ul li a {
   color: white;
+  text-decoration: none;
 }
 
 .componentFooter ul li a:hover {

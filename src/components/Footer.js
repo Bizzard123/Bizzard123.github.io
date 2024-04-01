@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { Link } from "react-router-dom"; // Import Link
 
 const Footer = () => {
   return (
@@ -16,25 +17,41 @@ const Footer = () => {
       <div className="componentFooter">
         <div style={{color:'#8e8e8e'}}>Services</div>
         <ul>
-          {[...Array(5)].map((_, index) => (
-            <li key={index}><a href="#">Link {index + 1}</a></li>
-          ))}
+        <li>
+                <Link to="/services/1">Service 1</Link>
+              </li>
+              <li>
+                <Link to="/services/2">Service 2</Link>
+              </li>
+              <li>
+                <Link to="/services/3">Service 3</Link>
+              </li>
+              <li>
+                <Link to="/services/4">Service 4</Link>
+              </li>
+              <li>
+                <Link to="/services/5">Service 5</Link>
+              </li>
+              <li>
+                <Link to="/services/6">Service 6</Link>
+              </li>
+
         </ul>
       </div>
       <div className="componentFooter">
       <div style={{color:'#8e8e8e'}}>Pages</div>
         <ul>
-          {[...Array(5)].map((_, index) => (
-            <li key={index}><a href="#">Link {index + 6}</a></li>
-          ))}
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Extra</a></li>
         </ul>
       </div>
       <div className="componentFooter">
-      <div style={{color:'#8e8e8e'}}>Others</div>
+      <div style={{color:'#8e8e8e'}}>Resources</div>
         <ul>
-          {[...Array(5)].map((_, index) => (
-            <li key={index}><a href="#">Link {index + 11}</a></li>
-          ))}
+          
+            <li><a href="#">Blogs</a></li>
+          
         </ul>
       </div>
     </section>
