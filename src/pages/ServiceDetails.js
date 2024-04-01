@@ -22,7 +22,7 @@ const ServiceDetail = ({ services }) => {
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat nec nisi eget vestibulum. Sed nec arcu vel felis accumsan posuere. Sed auctor est sit amet justo ultrices, ac pharetra ligula fringilla."
       />
       <div style={{display:'flex',width:'100%',justifyContent:'center'}}>
-      <Link style={{textDecoration:'none',marginBottom:'50px'}} className='centered-button' to="/">Back to Services</Link>
+      <Link style={{margin:'20px',textDecoration:'none',marginBottom:'50px'}} className='centered-button' to="/">Back to Services</Link>
       </div>
     </div>
   );
