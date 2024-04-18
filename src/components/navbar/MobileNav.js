@@ -4,7 +4,7 @@ import { FaBars, FaTimes, FaAngleUp, FaAngleDown } from "react-icons/fa";
 import logo from './logo.PNG';
 import logoDark from './logoDark.png';
 
-const MobileNavbar = () => {
+const MobileNavbar = ({ services }) => {
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false);
   const [servicesSublistVisible, setServicesSublistVisible] = useState(false);
 
@@ -21,7 +21,7 @@ const MobileNavbar = () => {
   return (
     <nav className={`mobileNav_container wow slideInDown ${mobileNavIsOpen ? 'mobileNav_open_bg' : ''}`} style={{marginTop:'10px',borderTopLeftRadius:'20px',borderTopRightRadius:'20px'}}>
       <Link to="/">
-        <img style={{ width: '100px', height: '30px',margin:'10px' }} src={mobileNavIsOpen ? logoDark : logo} />
+        <img alt="Logo" style={{ width: '100px', height: '30px',margin:'10px' }} src={mobileNavIsOpen ? logoDark : logo} />
       </Link>
       {mobileNavIsOpen ? (
         <FaTimes
@@ -51,24 +51,12 @@ const MobileNavbar = () => {
           </li>
           {servicesSublistVisible && (
             <ul className="sublist" style={{}}>
-              <li>
-                <Link to="/services/1">Service 1</Link>
-              </li>
-              <li>
-                <Link to="/services/2">Service 2</Link>
-              </li>
-              <li>
-                <Link to="/services/3">Service 3</Link>
-              </li>
-              <li>
-                <Link to="/services/4">Service 4</Link>
-              </li>
-              <li>
-                <Link to="/services/5">Service 5</Link>
-              </li>
-              <li>
-                <Link to="/services/6">Service 6</Link>
-              </li>
+              {services.map((service) => (
+          <Link style={{color:'white',textDecoration:'none'}} to={`/services/${service.id}`}><li key={service.id}>
+            {/* Use Link component to link to the Service Detail page */}
+            {service.title}
+          </li></Link>
+        ))}
             </ul>
           )}
           <li>

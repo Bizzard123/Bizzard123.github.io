@@ -9,6 +9,11 @@
     font-weight: 550;
     cursor: pointer;
   }
+
+  li a{
+    color: white;
+    text-decoration: none;
+  }
   
   /* Navbar */
   .navbar {

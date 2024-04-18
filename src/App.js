@@ -28,7 +28,7 @@ const App = () => {
     <Router>
       <div>
         <Navbar services={services} />
-        <MobileNavbar />
+        <MobileNavbar services={services}/>
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/services/:id" element={<ServiceDetail services={services} />} />

@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="section-container wow fadeInUp">
+    <div className="section-container">
       <div style={{ padding: '8px 12px', margin: '4px', borderRadius: '18px', backgroundColor: 'white', color: 'black', display: 'inline-block', border: '1px solid #ccc' }}>
     Welcome to Bizzad!
   </div>

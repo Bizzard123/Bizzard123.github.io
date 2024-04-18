@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { Link } from "react-router-dom"; // Import Link
 
 const Footer = () => {
+  const [services, setServices] = useState([
+    { id: 1, title: 'Design', description: 'Description for Service 1' },
+    { id: 2, title: 'Web Development', description: 'Description for Service 2' },
+    { id: 3, title: 'Mobile App Dev', description: 'Description for Service 1' },
+    { id: 5, title: 'Cloud Services', description: 'Description for Service 2' },
+    { id: 6, title: 'Custom Softwares', description: 'Description for Service 3' }
+  ]);
   return (
     <section className="sectionFooter wow fadeInUp">
       <div className="componentIcon">
@@ -17,25 +24,12 @@ const Footer = () => {
       <div className="componentFooter">
         <div style={{color:'#8e8e8e'}}>Services</div>
         <ul>
-        <li>
-                <Link to="/services/1">Service 1</Link>
-              </li>
-              <li>
-                <Link to="/services/2">Service 2</Link>
-              </li>
-              <li>
-                <Link to="/services/3">Service 3</Link>
-              </li>
-              <li>
-                <Link to="/services/4">Service 4</Link>
-              </li>
-              <li>
-                <Link to="/services/5">Service 5</Link>
-              </li>
-              <li>
-                <Link to="/services/6">Service 6</Link>
-              </li>
-
+        {services.map((service) => (
+          <Link style={{color:'white',textDecoration:'none'}} to={`/services/${service.id}`}><li key={service.id+1}>
+            {/* Use Link component to link to the Service Detail page */}
+            {service.title}
+          </li></Link>
+        ))}
         </ul>
       </div>
       <div className="componentFooter">
