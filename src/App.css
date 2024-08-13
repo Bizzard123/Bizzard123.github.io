@@ -17,6 +17,18 @@ body {
   color: black;
 }
 
+.custom-dropdown.custom-dropdown-solution {
+  position: absolute;
+  top: 50px; /* Adjust this based on your design */
+  right: 380px;
+  background-color: white;
+  border: 1px solid rgb(227, 229, 232);
+  padding: 20px 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  color: black;
+}
+
 .custom-dropdown li:hover{
   background-color: lightgrey;
 }
@@ -52,7 +64,7 @@ body {
 
 /* HeroSection.css */
 .section-container {
-  text-align: center;
+  text-align: left;
   background-color: #ffffff;
   padding: 3% 10%;
   padding-bottom: 60px;
@@ -67,7 +79,7 @@ body {
 }
 
 .sub-heading {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   color: black;
   margin-bottom: 20px;
@@ -75,8 +87,26 @@ body {
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 5px;
+}
+.content {
+  display: flex;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  flex: 1;
+}
+
+@media (max-width:600px) {
+  .content{
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .centered-button {
@@ -287,8 +317,8 @@ body {
   width: 30%;
 }
 
-.componentIcon h2{
-  padding-left: 60px;
+.componentIcon img{
+  margin-left: 60px;
   margin-bottom: 10px;
 }
 .componentIcon p{
@@ -343,8 +373,8 @@ body {
     width: 100%;
     text-align: left;
   }
-  .componentIcon h2{
-    padding-left: 25px;
+  .componentIcon img{
+    margin-left: 25px;
     margin-bottom: 10px;
   }
   .componentIcon p{
@@ -404,10 +434,6 @@ body {
 
 .card-content1 h2, p {
   margin: 0;
-}
-
-button:hover {
-  background-color: #6a5acd;
 }
 
 @media (max-width: 500px){
@@ -584,7 +610,7 @@ button:hover {
   border-radius: 5px;
   transition: background-color 0.5s ease;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .topic:hover {
@@ -650,7 +676,7 @@ button:hover {
   max-height: 0;
   overflow: hidden;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
 }
 
@@ -752,6 +778,12 @@ button:hover {
   margin: auto;
 }
 
+@media (min-width:700px) {
+  .faq-section{
+    width: 60%;
+  }
+}
+
 .faq-item {
   border: 1px solid #ddd;
   margin-bottom: 10px;
@@ -825,6 +857,10 @@ button:hover {
   width: 30%;
   min-height: 475px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -980,4 +1016,199 @@ button:hover {
   height: 600px;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.office365-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.office365-container h1 {
+  color: #333;
+}
+
+.office365-container h2 {
+  color: #666;
+}
+
+.office365-container h3 {
+  color: #999;
+}
+
+.office365-container p {
+  margin-bottom: 15px;
+}
+
+.office365-container ul {
+  margin-bottom: 15px;
+}
+
+.office365-container li {
+  margin-bottom: 5px;
+}
+
+.powerapps-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.powerapps-container h1 {
+  color: #333;
+}
+
+.powerapps-container h2 {
+  color: #666;
+}
+
+.powerapps-container p {
+  margin-bottom: 15px;
+}
+
+.powerapps-container ul {
+  margin-bottom: 15px;
+}
+
+.powerapps-container ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.powerapps-container li {
+  margin-bottom: 5px;
+}
+.sharepoint-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fullwidth-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sharepoint-container h1, h2 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.sharepoint-container ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.sharepoint-container ul li::before {
+  content: "•";
+  color: #666;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.sharepoint-container li {
+  margin-bottom: 10px;
+}
+
+.sharepoint-container strong {
+  color: #666;
+}
+
+.powerapps-container ul li::before {
+  content: "•";
+  color: #666;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.office365-container ul li::before {
+  content: "•";
+  color: #666;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.container_c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 5%;
+}
+
+.section_c {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.section_c.reversed_c {
+  flex-direction: row-reverse;
+}
+
+.image_c {
+  width: 40%;
+  height: auto;
+}
+
+.points_c {
+  width: 50%;
+  text-align: left;
+}
+
+.title_c {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.point-item_c {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section_c,
+  .section_c.reversed_c {
+    flex-direction: column;
+  }
+  .image_c{
+    width: 100%;
+  }
+  .points_c{
+    width: 100%;
+  }
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.video-card {
+  width: 80%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.video {
+  width: 100%;
+  border-radius: 15px;
 }

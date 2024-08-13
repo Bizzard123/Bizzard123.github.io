@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import HeroSection from '../components/HeroSection';
 import Card from '../components/Cards';
 import CardSection from '../components/CardSection';
@@ -8,19 +8,26 @@ import DarkSection from '../components/DarkSection';
 import FAQSection from '../components/Faqs';
 import CallSection from '../components/CallSection';
 import AboveFooter from '../components/AboveFooter';
-
+import WhyChooseUs from '../components/WhyChooseUs';
 
 const Home = () => {
+  const darkSectionRef = useRef(null);
+
+  const scrollToDarkSection = () => {
+    darkSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div>
-      <HeroSection />
+      <HeroSection onButtonClick={scrollToDarkSection} />
       <Card />
       <CardsSection />
       <YourComponent />
       <CardSection />
-      <CallSection />
-      <DarkSection />
+      <WhyChooseUs />
+      <div ref={darkSectionRef}>
+        <DarkSection />
+      </div>
       <FAQSection />
       <AboveFooter />
     </div>

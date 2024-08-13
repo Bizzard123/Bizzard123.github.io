@@ -39,8 +39,10 @@ const DarkSection = () => {
   return (
     <div className="DarkSection wow fadeInUp">
       <div className="left-content">
-        <h2>Crafting Digital Success with Codify</h2>
-        <p>Discover the innovative marketing strategies that set Codify apart, driving success in the digital landscape.</p>
+        <h2 style={{color:'white'}}>The stage is set – are you ready to automate and upscale? 
+</h2>
+        <p>Ready to take your business to the next level? Contact us today to kickstart your digital adventure, Whether you have a specific project in mind or need guidance on where to start, our team is here to help.
+Get in touch today to discuss your goals and explore how Bizzard can bring your vision to life. .</p>
         <button>Schedule a Call</button>
       </div>
 

@@ -13,37 +13,38 @@ const cardContents = [
     title: 'Idea',
     description: 'We meet with your team to learn more about your project idea and goals. After that, our team will work together to create an action plan and proposal for your project.',
     color: '#f1f8e9',
-    icon: <FaLightbulb style={{padding:'8px',border:'1px solid grey',borderRadius:'15px'}}/>,
+    icon: <FaLightbulb style={{padding:'8px', borderRadius:'15px',height:'46px',width:'46px'}}/>,
   },
   {
     title: 'Research',
     description: 'We will share a detailed questionnaire to analyze your business in-depth. After that, we will be able to create a tailor-made design to reach your business goals.',
     color:'#ecf0f3',
-    icon: <FaSearch style={{padding:'8px',border:'1px solid grey',borderRadius:'15px'}}/>,
+    icon: <FaSearch style={{padding:'8px', borderRadius:'15px',height:'46px',width:'46px'}}/>,
   },
   {
     title: 'Web Design',
     description: 'We will design a mockup or prototype of your website and present it to you. Once with the initial mockup, we will start the revision process to perfect it.',
     color:'#f3e5f5',
-    icon: <CgWebsite style={{padding:'8px',border:'1px solid grey',borderRadius:'15px'}}/>,
+    icon: <CgWebsite style={{padding:'8px', borderRadius:'15px',height:'46px',width:'46px'}}/>,
   },
+
   {
     title: 'Development',
     description: 'We develop websites using the best practices and standards. So you have a perfectly responsive, SEO-friendly, and highly conversion-oriented website.',
     color:'#feefdb',
-    icon: <FaCode style={{padding:'8px',border:'1px solid grey',borderRadius:'15px'}}/>,
+    icon: <FaCode style={{padding:'8px', borderRadius:'15px',height:'46px',width:'46px'}}/>,
   },
   {
     title: 'Launch',
     description: 'When the project is completed, we will schedule a 2hr session to train your team on using, editing, and taking advantage of your new website.',
     color:'#E1F5FE',
-    icon: <MdRocketLaunch style={{padding:'8px',border:'1px solid grey',borderRadius:'15px'}}/>,
+    icon: <MdRocketLaunch style={{padding:'8px', borderRadius:'15px',height:'46px',width:'46px'}}/>,
   },
   {
     title: "Support",
     description: "We keep a close relationship and communication with your team so we can help you with future design or development needs in the long term.",
     color:'#ecf0f3',
-    icon: <BiSupport style={{padding:'8px',border:'1px solid grey',borderRadius:'15px'}}/>,
+    icon: <BiSupport style={{padding:'8px', borderRadius:'15px',height:'46px',width:'46px'}}/>,
   }
 ];
 

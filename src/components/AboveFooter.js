@@ -2,17 +2,18 @@
 import React from 'react';
 import { FaReact, FaAngular, FaHtml5, FaNodeJs, FaCss3, FaVuejs, FaBootstrap, FaJsSquare, FaSass } from 'react-icons/fa';
 import { TbBrandNextjs } from "react-icons/tb";
+import { Link } from 'react-router-dom';
 
 
 const AboveFooter = () => {
   return (
     <div>
-    <div className="section-container wow fadeInUp">
+    <div className="section-container wow fadeInUp" style={{textAlign:'center'}}>
         <div className='AboveFooter'>
-        <p className="main-heading">We make your SaaS business shine</p>
-        <p className="sub-heading">Book a call to see how Perspective Design can help elevate your company's designs to the next level.</p>
-      <div className="button-container">
-        <button className="centered-button-inverted">Click me</button>
+        <p className="main-heading">Let's Make Your Business Shine</p>
+        <p className="sub-heading">At Bizzard, we're not just building websites – we're building success stories. Let us empower your business with cutting-edge digital solutions that drive growth, enhance efficiency, and unlock new opportunities. Together, we'll make your business shine brighter than ever before.</p>
+      <div className="button-container" style={{justifyContent:'center'}}>
+        <Link to='/call'><button className="centered-button-inverted">Book a Call</button></Link>
       </div>
       </div>
       </div>
