@@ -6,7 +6,7 @@ const CardsSection = () => {
   return (
     <div className='wow fadeInUp' style={{ padding: '5%',display:'flex',flexDirection:'column',backgroundColor:'white', color: 'black' }}>
       <div style={{display:'flex',flexDirection:'column'}}>
-      <div className='chips' style={{minWidth:'70px',minHeight:'20px'}}>
+      <div className='chips' style={{minWidth:'70px',minHeight:'20px',display:'flex'}}>
       <BsStars />{' '}Benefits
   </div>
       <div className="section-heading">

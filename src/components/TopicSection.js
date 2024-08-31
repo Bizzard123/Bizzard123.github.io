@@ -20,7 +20,7 @@ const YourComponent = () => {
 
   return (
     <div className='wow fadeInUp' style={{ padding: '5%', backgroundColor: 'white', marginTop: "-30px", paddingTop: '20px', display: 'flex', flexDirection: 'column' }}>
-      <div className='chips'>
+      <div className='chips' style={{display:'flex'}}>
         <FaHandHoldingUsd />{" "}Services
       </div>
       <div className="section-heading">
